@@ -48,8 +48,8 @@ export default function App() {
     <div>
       <Header isOnline={isOnline} />
       <Metrics metrics={fakeMetrics} />
-      <SalesChart dataPoints={fakeSalesData} />
       <ProductTable />
+      <SalesChart dataPoints={fakeSalesData} />
 
       {!isOnline && (
         <div className="m-4 rounded bg-yellow-700 p-4">
